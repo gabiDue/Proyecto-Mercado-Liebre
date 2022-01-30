@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+ body {
+     font-family: 'Roboto', sans-serif;
+ }
+
+
+ /* Header----------------------------------------------------------------------------------------------------- */
+
+.encabezado{
+    background-color: #EAC926;
+    color: #666;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.logo{
+   width: 200px;
+  
+}
+
+.buscador {
+    padding: auto;
+    margin:auto;
+
+}
+
+
+#iconobuscar{
+   padding: auto;
+   margin: auto;
+}
+ .buscador input{
+     border-radius: 5px;
+ }
+
+.fas.fa-hand-holding-usd{
+    text-align: center;
+    font-weight: 400px;
+}
+
+.listas ul {
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+    display: flex;
+}
+
+.listas a{
+    text-decoration: none;
+    display: inline-block;
+    color: #666;
+    padding: 3px;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.listas ul li{
+    margin: 0 3px;
+}
+
+.burger-menu{
+    color: white;
+    background-color:#1259c3 ;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 19px;
+    margin:auto;
+   
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media (max-width:480px){
+.listas{
+        display: none;
+    }
+.subencabezadobis{
+    display: flex;
+    justify-content: space-around;
+
+}
+.logo{
+    width: 50%;
+}
+.buscador input{
+    width: 70%;
+    margin-left: 15px;
+
+}
+
+}
+
+@media (min-width:481px){
+    .burger-menu{
+        display:none;
+        
+    }
+    .subencabezado{
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    .subencabezadobis{
+        display: flex;
+
+    }
+    .logo{
+        width: 45%;
+    }
+    .buscador input{
+        width: 70%;
+        margin-left: 10px;
+    }
+}
+
+/* Header----------------------------------------------------------------------------------------------------- */
+
+
+/* Register----------------------------------------------------------------------------------------------------- */
+
+.register{
+    color: #666;
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 15px;
+
+
+}
+.register input{
+    border-radius: 5px;
+    padding:5px;
+    border: #ebebeb;
+    
+}
+
+.anchoinput input{
+    width: 35%;
+}
+.interes{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-form {
+    background-color: #1259c3;
+    color: white;
+}
+
+/* Register----------------------------------------------------------------------------------------------------- */
+
+/* Login----------------------------------------------------------------------------------------------------- */
+.login{
+    color: #666;
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+
+}
+
+.login input{
+    border-radius: 5px;
+    padding:10px;
+    border: #ebebeb;
+    width: 50%;
+}
+
+ .login .submit-form:hover {
+    background-color: #0022AA;
+}
+
+/* Login----------------------------------------------------------------------------------------------------- */
+
+/* Main----------------------------------------------------------------------------------------------------- */
+
+.main{
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #ebebeb;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: -4px;
+}
+
+main section #articulos:hover{
+    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+}
+
+main section #articulos .descripcion{
+    display: none;
+}
+
+main section #articulos:hover .descripcion{
+    display:block;
+    
+}
+
+
+#articulos{
+border: solid 6px #ebebeb; 
+background-color: white;
+position:relative;
+align-items: baseline;
+}
+
+.masmenos{
+    display: flex;
+    justify-content: space-around;
+}
+
+ 
+.cajaarticulo{
+     border-top: solid 1px #ebebeb;
+     padding: 15px;
+
+ }
+ 
+
+ 
+ .fas.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color:#39b54a ;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    position: absolute;
+    border-radius: 50%;
+    right: 20px;
+    transition: transform 1s;
+   
+ }
+
+ main section #articulos:hover .fas.fa-truck{
+    transform: rotate(-90deg);
+ }
+
+
+
+
+ .precios-descuentos{
+    display: flex;
+    padding-top: 25px;
+        
+}
+
+.precios{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.descuentos{
+    font-size: 16px;
+    color:#39b54a;
+    flex-grow: 0.7;
+}
+
+
+@media (max-width:480px){
+    main h4 {
+        display: none;
+    }
+    .articulo2{
+        display: none;
+    }
+    .articulo3{
+        display: none;
+    }
+    .articulo4{
+        display: none;
+    }
+}
+
+@media(min-width:481px) and (max-width:768px) {
+    .articulo3{
+        display: none;
+    }
+    .articulo4{
+        display: none;
+    }
+
+}
+
+/* Main----------------------------------------------------------------------------------------------------- */
+
+/* Footer----------------------------------------------------------------------------------------------------- */
+
+.footer{
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 20px;
+
+}
+
+h3{
+    font-size: 24px;
+    
+}
+.copyright{
+    font-size: 16px;
+    text-align: left;
+    color:#ebebeb,
+}
+
+#tarjeta{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#present{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#seguridad{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#present:hover {
+    color:#0022AA ;
+}
+
+
+#seguridad:hover {
+    color:#0022AA ;
+}
+
+
+#tarjeta:hover {
+    color:#0022AA ;
+}
+
+
+@media(min-width:1280px){
+    .footerflex{
+        display: flex;
+    }
+}
+
+/* Footer----------------------------------------------------------------------------------------------------- */
+
+@media (min-width:481px){
+    *{
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+
+    }
+}
